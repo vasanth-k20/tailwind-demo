@@ -10,12 +10,17 @@ body {
 }
 
 #review-1{
-    background-image: url(/img/vecteezy_ai-generative-photo-business-concept-portrait-of-excited-man_29334763.jpg);
+    background-image: url(/img/reviwer.jpg);
     background-size: cover;
     /* background-position: center; */
 }
 
 #room{
     background-image: url(/img/room.jpeg);
+    background-size: cover;
+}
+
+#gallery{
+    background-image: url(/img/gallery.jpg);
     background-size: cover;
 }

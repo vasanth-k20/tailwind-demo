@@ -11,13 +11,13 @@
 
 <body>
     <section id="navbar">
-        <nav class="bg-white text-blue-400 shadow-md sticky top-0 z-50">
-            <div class="flex justify-between items-center p-4 w-[85%] mx-auto">
+        <nav class="bg-white text-blue-400 shadow-md fixed top-0 left-0 z-50 w-full">
+            <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
                 <h1 class="font-bold text-2xl">
                     HILL VIEW
                 </h1>
 
-                <ul class="list-none flex gap-4 m-0 p-0">
+                <ul class="list-none flex space-x-6 m-0 p-0">
                     <li><a href="#home" class="text-blue-400 no-underline hover:underline px-3">Home</a></li>
                     <li><a href="#about" class="text-blue-400 no-underline hover:underline px-3">About</a></li>
                     <li><a href="#services" class="text-blue-400 no-underline hover:underline px-3">Services</a></li>
@@ -27,8 +27,8 @@
         </nav>
     </section>
 
-    <section id="home" class="h-[500px] flex items-center">
-        <div class="h-[500px] bg-black/30 w-full">
+    <section id="home" class="h-screen flex items-center mt-16">
+        <div class="h-screen bg-black/30 w-full">
             <div class="grid-cols-1 align-items-center h-[500px] w-2xl ms-[60px]">
 
                 <div class="flex flex-col justify-center items-start h-full w-[90%] mx-auto">
@@ -167,37 +167,103 @@
         </div>
     </section>
 
-    <section id="reviews" class="bg-sky-100 py-10">
+    <section id="benefits" class="bg-sky-100 py-10">
         <div class="flex justify-center pt-5">
-                <h1 class="text-4xl font-bold">Why Choose Us?</h1>
-            </div>
+            <h1 class="text-4xl font-bold">Why Choose Us?</h1>
+        </div>
         <div class="flex flex-row w-[85%] mx-auto gap-2">
-            <div class="w-1/2 justify-items-center p-[40px]">
+            <div class="w-1/2 justify-items-center p-10">
                 <div class="flex flex-row text-amber-300 gap-5 mb-3 text-3xl">
-                  <i class="fa-solid fa-ranking-star"></i>
+                    <i class="fa-solid fa-ranking-star"></i>
                 </div>
-                <div  class="mb-3 text-xl font-semibold">1. Ratings</div>
+                <div class="mb-3 text-xl font-semibold">1. Ratings</div>
                 <div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos placeatvoluptatum.</p>
                 </div>
             </div>
-            <div class="w-1/2 justify-items-center p-[40px]">
+            <div class="w-1/2 justify-items-center p-10">
                 <div class="flex flex-row text-amber-300 gap-5 mb-3 text-3xl">
-                  <i class="fa-solid fa-medal"></i>
+                    <i class="fa-solid fa-medal"></i>
                 </div>
-                <div  class="mb-3 text-xl font-semibold">2. Quality</div>
+                <div class="mb-3 text-xl font-semibold">2. Quality</div>
                 <div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos placeatvoluptatum.</p>
                 </div>
             </div>
-            <div class="w-1/2 justify-items-center p-[40px]">
+            <div class="w-1/2 justify-items-center p-10">
                 <div class="flex flex-row text-amber-300 gap-5 mb-3 text-3xl">
-                  <i class="fa-solid fa-bell-concierge"></i>
+                    <i class="fa-solid fa-bell-concierge"></i>
                 </div>
-                <div  class="mb-3 text-xl font-semibold">3. Service</div>
+                <div class="mb-3 text-xl font-semibold">3. Service</div>
                 <div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos placeatvoluptatum.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallerysection">
+        <div class="w-[85%] mx-auto my-10">
+            <div class="flex justify-center pt-5">
+                <h1 class="text-4xl font-bold">Image Gallery</h1>
+            </div>
+            <div class="flex flex-cols pt-[50px] pb-[30px] justify-around">
+                <div id="gallery" class="shadow-2xl h-[150px] w-[150px]"></div>
+                <div id="gallery" class="shadow-2xl h-[150px] w-[150px]"></div>
+                <div id="gallery" class="shadow-2xl h-[150px] w-[150px]"></div>
+                <div id="gallery" class="shadow-2xl h-[150px] w-[150px]"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="number" class="bg-blue-950 text-white">
+        <div class="flex flex-row justify-around py-20">
+            <div class="flex flex-col items-center">
+                <div class="text-5xl font-bold">299</div>
+                <div class="text-amber-300">Rooms</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="text-5xl font-bold">150</div>
+                <div class="text-amber-300">Amenities</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="text-5xl font-bold">75</div>
+                <div class="text-amber-300">Reviews</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="w-[85%] mx-auto">
+            <div class="flex justify-center p-10">
+                <h1 class="text-4xl font-bold">Additional Services</h1>
+            </div>
+            <div class="flex flex-row gap-2 pb-10">
+                <div class="w-1/2 justify-items-center">
+                    <div id="room" class="shadow-2xl h-[300px] w-[300px]"></div>
+                    <h4 class="text-2xl font-semibold py-3">Drop and PickUp</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Aut deleniti autem odio quidem.</p>
+                </div>
+                <div class="w-1/2 justify-items-center">
+                    <div id="room" class="shadow-2xl h-[300px] w-[300px]"></div>
+                    <h4 class="text-2xl font-semibold py-3">Yoga Space</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Aut deleniti autem odio quidem.</p>
+                </div>
+                <div class="w-1/2 justify-items-center">
+                    <div id="room" class="shadow-2xl h-[300px] w-[300px]"></div>
+                    <h4 class="text-2xl font-semibold py-3">Food Delivery</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Aut deleniti autem odio quidem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="bg-sky-100 py-10">
+        <div class="flex flex-col justify-center pt-5">
+            <h1 class="text-4xl font-bold flex justify-center mb-2">Contact Us For Details</h1>
+            <p class="text-lg flex justify-center">Feel free to reach out for any inquiries or further information.</p>
+            <div class="flex justify-center">
+                <button class="bg-blue-600 text-white px-6 py-3 no-underline hover:bg-blue-500 font-semibold my-4">Call Now</button>
             </div>
         </div>
     </section>
